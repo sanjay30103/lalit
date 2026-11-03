@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@source "../*.php";
+@source "../includes/**/*.php";
+@source "../partials/**/*.php";
+@source "../assets/js/**/*.js";
+
+/* ----------------------------------------------------------------
+   Brand tokens - Guru Gorakhnath Construction
+   Kumkum (maroon red) · Haldi (golden yellow) · Ink (warm charcoal) · Cream
+------------------------------------------------------------------ */
+@theme {
+  --font-display: "Bricolage Grotesque", "Mukta", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", "Mukta", ui-sans-serif, system-ui, sans-serif;
+  --font-hindi: "Tiro Devanagari Hindi", "Mukta", serif;
+
+  --color-kumkum-50: #fdf3f2;
+  --color-kumkum-100: #fbe4e2;
+  --color-kumkum-200: #f6cbc7;
+  --color-kumkum-300: #eea69f;
+  --color-kumkum-400: #e2766c;
+  --color-kumkum-500: #d14d42;
+  --color-kumkum-600: #b8342a;
+  --color-kumkum-700: #9a2820;
+  --color-kumkum-800: #80241e;
+  --color-kumkum-900: #6b231e;
+  --color-kumkum-950: #3a0e0b;
+
+  --color-haldi-50: #fffbeb;
+  --color-haldi-100: #fef2c7;
+  --color-haldi-200: #fde58a;
+  --color-haldi-300: #fbd24d;
+  --color-haldi-400: #f0b429;
+  --color-haldi-500: #de9a0e;
+  --color-haldi-600: #b97709;
+  --color-haldi-700: #93560c;
+
+  --color-ink-200: #d9d0c9;
+  --color-ink-300: #bdb1aa;
+  --color-ink-400: #9c8f88;
+  --color-ink-500: #786c66;
+  --color-ink-600: #5a4f4a;
+  --color-ink-700: #3f3632;
+  --color-ink-800: #2d2623;
+  --color-ink-900: #1f1a18;
+  --color-ink-950: #141110;
+
+  --color-cream: #faf6ef;
+  --color-sand: #f1e9dc;
+  --color-line: #e6dccb;
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+}
+
+@utility wrap {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @variant sm { padding-inline: 1.5rem; }
+  @variant lg { padding-inline: 2rem; }
+}
+
+/* Blueprint grid - a quiet nod to naksha paper */
+@utility bg-blueprint {
+  background-image:
+    linear-gradient(to right, rgb(154 40 32 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(154 40 32 / 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@utility bg-blueprint-dark {
+  background-image:
+    linear-gradient(to right, rgb(250 246 239 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(250 246 239 / 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Arched frame - temple-door / jharokha silhouette used across the site */
+@utility arch {
+  border-radius: 999px 999px 1.25rem 1.25rem;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-haldi-300); color: var(--color-ink-950); }
+  :focus-visible { outline: 2px solid var(--color-kumkum-600); outline-offset: 3px; border-radius: 6px; }
+  [x-cloak] { display: none !important; }
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-bold transition duration-200 active:scale-[.98];
+}
+@utility btn-primary { @apply btn bg-kumkum-700 text-cream shadow-lg shadow-kumkum-900/15 hover:bg-kumkum-800; }
+@utility btn-gold { @apply btn bg-haldi-400 text-ink-950 hover:bg-haldi-300; }
+@utility btn-ghost { @apply btn border border-ink-900/15 bg-white/60 text-ink-900 hover:border-ink-900/40 hover:bg-white; }
+@utility btn-wa { @apply btn bg-[#1faa53] text-white hover:bg-[#178c44]; }
+
+@utility eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] text-kumkum-700 uppercase;
+  &::before { content: ""; @apply h-0.5 w-6 bg-haldi-400; }
+}
+
+@utility field {
+  @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink-900 transition placeholder:text-ink-500/70 focus:border-kumkum-600 focus:ring-4 focus:ring-kumkum-600/10 focus:outline-none;
+}
+
+@layer components {
+  /* Scroll reveal */
+  .js [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .js [data-reveal].is-visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .js [data-reveal] { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* Range slider */
+  .range { @apply h-2 w-full cursor-pointer appearance-none rounded-full bg-white/15; }
+  .range::-webkit-slider-runnable-track { @apply h-2 rounded-full bg-transparent; }
+  .range::-webkit-slider-thumb { @apply -mt-2 size-6 appearance-none rounded-full border-4 border-ink-900 bg-haldi-400 shadow; }
+  .range::-moz-range-track { @apply h-2 rounded-full bg-transparent; }
+  .range::-moz-range-thumb { @apply size-5 rounded-full border-4 border-ink-900 bg-haldi-400; }
+
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .faq-icon { transform: rotate(45deg); }
+}

@@ -1,0 +1,6 @@
+node_modules/
+storage/*.csv
+.DS_Store
+compititor-website.pdf
+*.pdf
+dist/

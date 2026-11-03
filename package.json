@@ -1,0 +1,16 @@
+{
+  "name": "guru-gorakhnath-construction",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Website for Guru Gorakhnath Construction, Haldwani",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
+    "serve": "php -S localhost:8000",
+    "start": "npm run build && (npm run dev & php -S localhost:8000)"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  }
+}
