@@ -63,7 +63,7 @@ $services = [
         'title' => 'Plot Buying & Selling',
         'hi'    => 'प्लॉट ख़रीदें / बेचें',
         'short' => 'Verified residential plots in and around Haldwani at fair prices - with clear papers.',
-        'image' => 'plot-field.jpg',
+        'image' => 'res-hills.jpg',
         'points'=> ['Title & registry document check', 'Site visit with you - no pressure', 'Help with registry & mutation (dakhil-kharij)', 'Sell your plot through our buyer network'],
     ],
     [
@@ -72,7 +72,7 @@ $services = [
         'title' => 'House Construction',
         'hi'    => 'मकान निर्माण',
         'short' => 'Turnkey home building - from naksha pass to final finishing, under one contract.',
-        'image' => 'site-team.jpg',
+        'image' => 'site-rcc-frame.jpg',
         'points'=> ['Naksha / map approval from authority', 'Structural design by qualified engineer', 'Material + labour or labour-only contract', 'Weekly photo updates on WhatsApp'],
     ],
     [
@@ -81,7 +81,7 @@ $services = [
         'title' => 'Ready-to-Move Homes',
         'hi'    => 'बना बनाया मकान',
         'short' => 'Independent houses that are complete, inspected and ready for griha pravesh.',
-        'image' => 'house-cream.jpg',
+        'image' => 'res-rowhouses.jpg',
         'points'=> ['Walk through before you decide', 'Clear title, approved map', 'Bank loan documentation support', 'Customise finishing on select units'],
     ],
     [
@@ -99,7 +99,7 @@ $services = [
         'title' => 'Commercial & Multi-storey',
         'hi'    => 'व्यावसायिक निर्माण',
         'short' => 'Shops, showrooms, rental floors and small complexes built to code and on schedule.',
-        'image' => 'site-rebar.jpg',
+        'image' => 'com-mart.jpg',
         'points'=> ['RCC framed structures', 'Shop-cum-residence buildings', 'Rental floor planning', 'Boundary walls & godowns'],
     ],
     [
@@ -108,7 +108,7 @@ $services = [
         'title' => 'Renovation & Extension',
         'hi'    => 'मरम्मत व विस्तार',
         'short' => 'Add a floor, redo a kitchen, fix seepage or give your old house a fresh face.',
-        'image' => 'interior-living.jpg',
+        'image' => 'int-drawing-room.jpg',
         'points'=> ['Floor extension on existing house', 'Waterproofing & seepage repair', 'Kitchen, bathroom & flooring upgrades', 'Exterior paint & elevation makeover'],
     ],
 ];
@@ -118,14 +118,14 @@ $services = [
  * type: plot | house | ongoing
  */
 $properties = [
-    ['id' => 'P101', 'type' => 'plot',  'title' => 'Residential Plot near Kamalua Ganja Road', 'location' => 'Kusumkhera', 'area' => '1,200 sq.ft', 'facing' => 'East',  'price' => '₹ 18.5 Lakh', 'image' => 'plot-field.jpg',        'tags' => ['Registry ready', '20 ft road']],
-    ['id' => 'P102', 'type' => 'plot',  'title' => 'Corner Plot, Gated Colony',               'location' => 'Lamachaur',  'area' => '1,800 sq.ft', 'facing' => 'North', 'price' => '₹ 24 Lakh',   'image' => 'plot-colony.jpg',     'tags' => ['Corner', 'Boundary wall']],
-    ['id' => 'H201', 'type' => 'house', 'title' => '3 BHK Independent House',                 'location' => 'Kusumkhera', 'area' => '1,650 sq.ft', 'facing' => 'East',  'price' => '₹ 62 Lakh',   'image' => 'house-cream.jpg',       'tags' => ['Ready to move', 'Car parking']],
-    ['id' => 'H202', 'type' => 'house', 'title' => '2 BHK Duplex with Terrace',               'location' => 'Kamaluaganja','area' => '1,100 sq.ft', 'facing' => 'West',  'price' => '₹ 44 Lakh',   'image' => 'house-porch.jpg',       'tags' => ['Ready to move', 'Loan approved']],
-    ['id' => 'O301', 'type' => 'ongoing', 'title' => '4 BHK Modern Villa (Pre-booking)',      'location' => 'Kathgharia', 'area' => '2,400 sq.ft', 'facing' => 'North', 'price' => '₹ 1.15 Cr',   'image' => 'villa-modern-3.jpg',    'tags' => ['Possession 2027', 'Customisable']],
-    ['id' => 'P103', 'type' => 'plot',  'title' => 'Budget Plot for First Home',              'location' => 'Bithoria',   'area' => '900 sq.ft',   'facing' => 'South', 'price' => '₹ 11 Lakh',   'image' => 'plot-green.jpg',     'tags' => ['Budget', 'Electricity line']],
-    ['id' => 'H203', 'type' => 'house', 'title' => '3 BHK House with Lawn',                   'location' => 'Panchakki',  'area' => '2,000 sq.ft', 'facing' => 'East',  'price' => '₹ 78 Lakh',   'image' => 'house-white-modern.jpg','tags' => ['Lawn', 'Modular kitchen']],
-    ['id' => 'O302', 'type' => 'ongoing', 'title' => 'Shop-cum-Residence Building',           'location' => 'Kusumkhera', 'area' => '2,200 sq.ft', 'facing' => 'Main road', 'price' => 'On request', 'image' => 'site-rebar.jpg',  'tags' => ['Commercial', 'Under construction']],
+    ['id' => 'P101', 'type' => 'plot',  'title' => 'Residential Plot near Kamalua Ganja Road', 'location' => 'Kusumkhera', 'area' => '1,200 sq.ft', 'facing' => 'East',  'price' => '₹ 18.5 Lakh', 'image' => 'site-open-plot.jpg',  'tags' => ['Registry ready', '20 ft road']],
+    ['id' => 'P102', 'type' => 'plot',  'title' => 'Corner Plot, Gated Colony',               'location' => 'Lamachaur',  'area' => '1,800 sq.ft', 'facing' => 'North', 'price' => '₹ 24 Lakh',   'image' => 'plot-green.jpg',      'tags' => ['Corner', 'Boundary wall']],
+    ['id' => 'H201', 'type' => 'house', 'title' => '3 BHK Independent House',                 'location' => 'Kusumkhera', 'area' => '1,650 sq.ft', 'facing' => 'East',  'price' => '₹ 62 Lakh',   'image' => 'res-yellow-house.jpg','tags' => ['Ready to move', 'Car parking']],
+    ['id' => 'H202', 'type' => 'house', 'title' => '2 BHK Duplex in Row Colony',              'location' => 'Kamaluaganja','area' => '1,100 sq.ft', 'facing' => 'West',  'price' => '₹ 44 Lakh',   'image' => 'res-rowhouses.jpg',   'tags' => ['Ready to move', 'Loan approved']],
+    ['id' => 'O301', 'type' => 'ongoing', 'title' => '4 BHK Independent House (Pre-booking)', 'location' => 'Kathgharia', 'area' => '2,400 sq.ft', 'facing' => 'North', 'price' => '₹ 95 Lakh',   'image' => 'site-rcc-frame.jpg',  'tags' => ['Possession 2027', 'Customisable']],
+    ['id' => 'P103', 'type' => 'plot',  'title' => 'Budget Plot for First Home',              'location' => 'Bithoria',   'area' => '900 sq.ft',   'facing' => 'South', 'price' => '₹ 11 Lakh',   'image' => 'plot-field.jpg',      'tags' => ['Budget', 'Electricity line']],
+    ['id' => 'H203', 'type' => 'house', 'title' => '3 BHK Kothi with Boundary Wall',          'location' => 'Panchakki',  'area' => '2,000 sq.ft', 'facing' => 'East',  'price' => '₹ 78 Lakh',   'image' => 'res-kothi.jpg',       'tags' => ['Corner', 'Car parking']],
+    ['id' => 'O302', 'type' => 'ongoing', 'title' => 'Shop-cum-Residence Building',           'location' => 'Kusumkhera', 'area' => '2,200 sq.ft', 'facing' => 'Main road', 'price' => 'On request', 'image' => 'site-brick-house.jpg', 'tags' => ['Commercial', 'Under construction']],
 ];
 
 $propertyTypes = [
@@ -135,22 +135,27 @@ $propertyTypes = [
 ];
 
 /**
- * Projects gallery - DEMO photos. Client ke asli kaam ki photos se replace karein.
+ * Projects gallery - DEMO photos (Wikimedia Commons, see credits.php). Client ke asli kaam ki photos se replace karein.
  * category: residential | commercial | interior | ongoing
  */
 $projects = [
-    ['title' => 'Modern Duplex',          'location' => 'Kusumkhera',  'category' => 'residential', 'image' => 'villa-modern-1.jpg'],
-    ['title' => 'Family Home, 3 BHK',     'location' => 'Lamachaur',   'category' => 'residential', 'image' => 'house-cream.jpg'],
-    ['title' => 'Slab Casting in Progress','location' => 'Kamaluaganja','category' => 'ongoing',    'image' => 'site-rebar.jpg'],
-    ['title' => 'Contemporary Villa',     'location' => 'Kathgharia',  'category' => 'residential', 'image' => 'villa-modern-3.jpg'],
-    ['title' => 'Living Room Finish',     'location' => 'Haldwani',    'category' => 'interior',    'image' => 'interior-living.jpg'],
-    ['title' => 'Wood & Glass Residence', 'location' => 'Bhotiyapadao','category' => 'residential', 'image' => 'house-wood-modern.jpg'],
-    ['title' => 'Site Planning & Layout', 'location' => 'Bithoria',    'category' => 'ongoing',     'image' => 'site-team.jpg'],
-    ['title' => 'Attic Family Lounge',    'location' => 'Haldwani',    'category' => 'interior',    'image' => 'interior-wood.jpg'],
-    ['title' => 'Two-storey Bungalow',    'location' => 'Panchakki',   'category' => 'residential', 'image' => 'villa-modern-2.jpg'],
-    ['title' => 'Evening Elevation',      'location' => 'Kusumkhera',  'category' => 'residential', 'image' => 'house-dusk.jpg'],
-    ['title' => 'Shop-cum-Residence',     'location' => 'Rampur Road', 'category' => 'commercial',  'image' => 'house-white-modern.jpg'],
-    ['title' => 'Electrical Fit-out',     'location' => 'Haldwani',    'category' => 'ongoing',     'image' => 'electrician.jpg'],
+    ['title' => 'Two-storey Kothi',          'location' => 'Kusumkhera',   'category' => 'residential', 'image' => 'res-kothi.jpg'],
+    ['title' => 'Row Houses, 2 BHK',         'location' => 'Kamaluaganja', 'category' => 'residential', 'image' => 'res-rowhouses.jpg'],
+    ['title' => 'Brickwork, First Floor',    'location' => 'Lamachaur',    'category' => 'ongoing',     'image' => 'site-masons.jpg'],
+    ['title' => 'Double-storey Family Home', 'location' => 'Bithoria',     'category' => 'residential', 'image' => 'res-yellow-house.jpg'],
+    ['title' => 'Drawing Room Finishing',    'location' => 'Haldwani',     'category' => 'interior',    'image' => 'int-drawing-room.jpg'],
+    ['title' => 'Showroom Building',         'location' => 'Rampur Road',  'category' => 'commercial',  'image' => 'com-mart.jpg'],
+    ['title' => 'RCC Frame Work',            'location' => 'Kathgharia',   'category' => 'ongoing',     'image' => 'site-rcc-frame.jpg'],
+    ['title' => 'Kitchen Platform & Tiling', 'location' => 'Kusumkhera',   'category' => 'interior',    'image' => 'int-kitchen.jpg'],
+    ['title' => 'Shop-cum-Residence',        'location' => 'Bareilly Road','category' => 'commercial',  'image' => 'com-shop-residence.jpg'],
+    ['title' => 'Pahadi-style Home',         'location' => 'Bhimtal Road', 'category' => 'residential', 'image' => 'res-pahadi-house.jpg'],
+    ['title' => 'Living & Dining Area',      'location' => 'Haldwani',     'category' => 'interior',    'image' => 'int-living.jpg'],
+    ['title' => 'Column Reinforcement',      'location' => 'Panchakki',    'category' => 'ongoing',     'image' => 'site-rebar-brick.jpg'],
+    ['title' => 'Row of Shops',              'location' => 'Kusumkhera',   'category' => 'commercial',  'image' => 'com-shops-row.jpg'],
+    ['title' => 'Exposed-brick House',       'location' => 'Damuadhunga',  'category' => 'residential', 'image' => 'res-brick-house.jpg'],
+    ['title' => 'Hall with Marble Flooring', 'location' => 'Haldwani',     'category' => 'interior',    'image' => 'int-hall.jpg'],
+    ['title' => 'Bamboo Scaffolding Work',   'location' => 'Kamaluaganja', 'category' => 'ongoing',     'image' => 'site-scaffold.jpg'],
+    ['title' => 'Ground Floor Structure',    'location' => 'Lalkuan',      'category' => 'ongoing',     'image' => 'site-brick-house.jpg'],
 ];
 
 $projectCategories = [

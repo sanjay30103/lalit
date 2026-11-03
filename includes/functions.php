@@ -35,7 +35,7 @@ function wa_link(string $message = ''): string
 
 function img(string $file): string
 {
-    return 'assets/images/demo/' . $file;
+    return 'assets/images/site/' . $file;
 }
 
 /** Cache-busted asset URL */

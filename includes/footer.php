@@ -65,7 +65,7 @@
 
         <div class="flex flex-col gap-2 border-t border-white/10 py-6 text-xs text-cream/45 sm:flex-row sm:justify-between">
             <p>© <?= date('Y') ?> <?= e($site['name']) ?>, <?= e($site['city']) ?>. All rights reserved.</p>
-            <p><a href="brand.php" class="hover:text-cream">Brand kit</a></p>
+            <p class="flex gap-4"><a href="credits.php" class="hover:text-cream">Photo credits</a><a href="brand.php" class="hover:text-cream">Brand kit</a></p>
         </div>
     </div>
 </footer>

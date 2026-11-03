@@ -9,7 +9,7 @@ page_hero(
     'Everything your home needs - <span class="text-kumkum-700">under one roof.</span>',
     'हमारी सेवाएँ',
     'From finding the right plot to handing you the keys, every step is handled by one accountable team led by ' . $site['owner'] . '.',
-    'site-team.jpg'
+    'site-scaffold.jpg'
 );
 ?>
 

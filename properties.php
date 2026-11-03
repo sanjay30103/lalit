@@ -13,7 +13,7 @@ page_hero(
     'Plots and homes, <span class="text-kumkum-700">with papers you can trust.</span>',
     'प्लॉट एवं मकान - उचित मूल्य पर',
     'Every listing is personally checked by us - title, approvals and access road. Shortlist on WhatsApp and we\'ll arrange a site visit.',
-    'house-cream.jpg'
+    'res-pahadi-house.jpg'
 );
 ?>
 

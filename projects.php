@@ -9,7 +9,7 @@ page_hero(
     'Every home here is <span class="text-kumkum-700">someone\'s dream, delivered.</span>',
     'हमारा काम',
     'A look at houses, interiors and buildings we have completed - and the sites we are working on right now.',
-    'villa-glass.jpg'
+    'res-brick-house.jpg'
 );
 ?>
 

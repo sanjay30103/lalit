@@ -34,7 +34,7 @@ $schema = [
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?= e($pageTitle) ?>">
     <meta property="og:description" content="<?= e($pageDesc) ?>">
-    <meta property="og:image" content="<?= e($site['base_url']) ?>/assets/images/demo/villa-modern-1.jpg">
+    <meta property="og:image" content="<?= e($site['base_url']) ?>/assets/images/site/res-kothi.jpg">
     <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

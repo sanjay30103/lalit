@@ -14,9 +14,9 @@ PID=$!
 trap 'kill $PID 2>/dev/null || true' EXIT
 sleep 1
 
-for page in index services properties projects about contact brand; do
+for page in index services properties projects about contact brand credits; do
   curl -sf "http://127.0.0.1:$PORT/$page.php" \
-    | sed -E 's#(href|action)="(index|services|properties|projects|about|contact|brand)\.php#\1="\2.html#g' \
+    | sed -E 's#(href|action)="(index|services|properties|projects|about|contact|brand|credits)\.php#\1="\2.html#g' \
     > "$OUT/$page.html"
   echo "  $page.html"
 done

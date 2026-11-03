@@ -56,13 +56,13 @@ $paths = [
         <div class="relative mx-auto w-full max-w-lg lg:max-w-none" data-reveal>
             <div class="grid grid-cols-[1.25fr_1fr] gap-4">
                 <div class="arch row-span-2 overflow-hidden border-[6px] border-white shadow-2xl shadow-ink-900/20">
-                    <img src="<?= img('villa-modern-1.jpg') ?>" alt="Modern two-storey house with large windows" class="aspect-[3/4.4] size-full object-cover" fetchpriority="high">
+                    <img src="<?= img('res-kothi.jpg') ?>" alt="Two-storey independent house with boundary wall" class="aspect-[3/4.4] size-full object-cover" fetchpriority="high">
                 </div>
                 <div class="overflow-hidden rounded-3xl border-[6px] border-white shadow-xl shadow-ink-900/10">
-                    <img src="<?= img('plot-field.jpg') ?>" alt="Open plot of land at sunrise" class="aspect-square size-full object-cover">
+                    <img src="<?= img('site-open-plot.jpg') ?>" alt="Open residential plot with boundary" class="aspect-square size-full object-cover">
                 </div>
                 <div class="overflow-hidden rounded-3xl border-[6px] border-white shadow-xl shadow-ink-900/10">
-                    <img src="<?= img('site-team.jpg') ?>" alt="Construction team planning at site" class="aspect-square size-full object-cover">
+                    <img src="<?= img('site-masons.jpg') ?>" alt="Masons building brick walls at site" class="aspect-square size-full object-cover">
                 </div>
             </div>
 

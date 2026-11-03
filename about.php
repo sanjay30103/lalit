@@ -9,7 +9,7 @@ page_hero(
     'A local builder who <span class="text-kumkum-700">answers his own phone.</span>',
     'हमारे बारे में',
     'Guru Gorakhnath Construction is a Haldwani-based building contractor and property firm, run personally by ' . $site['owner'] . ' from our office on Kamalua Ganja Road, Kusumkhera.',
-    'hills.jpg'
+    'res-hills.jpg'
 );
 ?>
 
@@ -17,7 +17,7 @@ page_hero(
     <div class="wrap grid gap-14 lg:grid-cols-2 lg:items-center">
         <div class="grid grid-cols-2 gap-4" data-reveal>
             <div class="arch col-span-1 row-span-2 aspect-[3/5] overflow-hidden border-[6px] border-white shadow-xl">
-                <img src="<?= img('site-rebar.jpg') ?>" alt="Steel reinforcement work at site" loading="lazy" class="size-full object-cover">
+                <img src="<?= img('site-rebar-brick.jpg') ?>" alt="Column reinforcement and brick wall at site" loading="lazy" class="size-full object-cover">
             </div>
             <div class="overflow-hidden rounded-3xl border-[6px] border-white shadow-xl">
                 <img src="<?= img('blueprint.jpg') ?>" alt="House plan on paper" loading="lazy" class="aspect-square size-full object-cover">
