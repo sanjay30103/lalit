@@ -29,7 +29,7 @@ page_hero(
                 </label>
                 <label class="block">
                     <span class="sr-only">Location</span>
-                    <select id="prop-location" class="field pr-10 lg:w-52">
+                    <select id="prop-location" class="field lg:w-52">
                         <option value="all">All locations</option>
                         <?php foreach ($locations as $loc): ?>
                             <option value="<?= e($loc) ?>"><?= e($loc) ?></option>
